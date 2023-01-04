@@ -14,21 +14,29 @@ namespace CacheAOP.ACL
         [Cache]
         public virtual async Task<TaxInquiryResult> TaxInquiry(string nationalId, string postalCode)
         {
-            return new TaxInquiryResult()
+            await HTTPCALL();
+            return await Task.FromResult(new TaxInquiryResult()
             {
                 IsSuccessful = true,
                 TaxCode = "1254866333"
-            };
+            });
         }
+
         [Cache]
         public virtual async Task<IdentityInfoResult> IdentityInquiry(string nationalId, DateTime birth)
         {
-            return new IdentityInfoResult()
+            await HTTPCALL();
+            return await Task.FromResult(new IdentityInfoResult()
             {
                 IsSuccessful = true,
                 Name = "MashtHasan",
                 LastName = "Hasani"
-            };
+            });
+        }
+
+        private async Task HTTPCALL()
+        {
+            return;
         }
     }
 
