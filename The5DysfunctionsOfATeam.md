@@ -22,3 +22,5 @@ This one comes from fear of holding one another accountable to not jeopardize a 
 What helps people stay accountable is the fear of letting down their teammates.
 What we expect from others should be totally clear.
 ### 5. Inattention to results
+Results are those goals that managers set for a specific period of time to reach. The wrong thing to focus on, apart from results, is the team status and individual status. Team status means team members are satisfied by being part of a specific team/company. Individual status means each team member cares only about his/her personal goal, career advancement, etc.
+To overcome this issue, goals and results must be clear in a team, and we should reward members only based on achieving those results.
