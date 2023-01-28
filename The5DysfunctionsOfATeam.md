@@ -11,7 +11,16 @@ Some personal examples for myself would be being able to make mistakes, being ab
 We need to change our mindset about conflicts. Conflict is an opportunity to grow. We tend to avoid confronting others because we are afraid we might hurt them, especially when that relationship matters to us. But avoidance results in tension between teammates.
 Some people think conflicts are a waste of time, and we should just let things go. But the tension  of avoiding them wastes even more time and energy in the team.
 We should acknowledge that conflict is productive, and conflict resolution is necessary.
-* TKI conflict model?
+#### TKI conflict management
+TKI (Thomas-Kilmann Conflict Instrument) models the way we tend to behave when facing conflicts. As the models shows, we tend to oscillate between spectrums of two extreme, i.e. assertiveness and cooperativeness.    
+<img src="https://user-images.githubusercontent.com/33371213/215250756-9268dbee-5709-4635-9a31-e6790909ca75.png" width="350" height="350">    
+(Picture from https://kilmanndiagnostics.com/overview-thomas-kilmann-conflict-mode-instrument-tki/)   
+    
+We do not have such thing as the best strategy to resolve conflicts. Rather, we should use different strategies for different situations.   
+<img src="https://user-images.githubusercontent.com/33371213/215250572-32105fd4-0c4e-46c6-8811-718e92797f83.png" width="800" height="600">    
+
+(Picture from https://workshopbank.com/thomas-kilmann-conflict-mode-instrument)   
+
 ### 3. Lack of commitment
 This one drives from the need for consensus(that we should all agree on one thing) or certainty
 It's important that in a team, everyone feels heard and considered. It doesn't matter if the ultimate decision is not agreed upon by all members.
