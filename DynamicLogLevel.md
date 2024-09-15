@@ -1,6 +1,6 @@
 # Changing Log Level At Runtime
 Due to some restrictions we are facing in a project when it comes to using logging and monitoring tools, and other reasons beyond the scope of this document, we've decided to implement a machanism to change log level at runtime.
-Here are the steps taken to do so:
+Here are the steps we took to do it:
 
 We need to define categories for different processes of the application to temporarily change the log level of a specific category for debugging purpose . Changing global log level is also possible, but not our choice.
 The first thing is to add our contextual data to all logs in a specific part of the program to distinguish different parts with a *category*. We are using **Serilog** library in **dotnet**, and it has a feature called **LogContext** . It's a way to enrich logs with custom data. [Here](https://github.com/serilog/serilog/wiki/Enrichment "Here") is the documents to setup and use LogContext.
@@ -205,7 +205,7 @@ We want to change log level of a particular category to another level. So, for a
         )
 ```
 LogLevelManager is a class I created to handle log levels and filtering. We can use methods like ByIncludingOnly to tell Serilog when to use this sub logger's configuration. The method SourceContains is also a simple Func that filters logs based on their SourceContext property (or any property we need to do filtering by). 
-There is another things used here, **LogSwitch**. It's what we need when we want to change the log level dynamically at runtime.
+There is another thing used here, **LogSwitch**. It's what we need when we want to change the log level dynamically at runtime.
 There is another important point here. We must set the **global log level to the minimum level**, since sub loggers can not log any more verbose than the global log level.
 Here is the complete LogLevelManager:
 ```csharp
