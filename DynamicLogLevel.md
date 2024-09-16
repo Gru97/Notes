@@ -236,27 +236,6 @@ public class LogLevelManager
         {
             _dynamicLogLevelCategories[type.Name] = new LoggingLevelSwitch(LogEventLevel.Error);
         }
-
-        // Get all controllers and their actions
-        var controllers = AppDomain
-            .CurrentDomain.GetAssemblies()
-            .SelectMany(assembly => assembly.GetTypes())
-            .Where(type => typeof(ControllerBase).IsAssignableFrom(type)) // Only controllers
-            .ToList();
-
-        foreach (var controller in controllers)
-        {
-            var actions = controller
-                .GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly)
-                .Where(m => m.IsPublic && !m.IsDefined(typeof(NonActionAttribute))); // Only actions
-
-            foreach (var action in actions)
-            {
-                var category =
-                    $"{controller.Name.Replace("Controller", "")}:{action.Name.Replace("Async", "")}";
-                _dynamicLogLevelCategories[category] = new LoggingLevelSwitch(LogEventLevel.Error);
-            }
-        }
     }
 
     public static LoggingLevelSwitch GetLogSwitchOfCategory(string key)
